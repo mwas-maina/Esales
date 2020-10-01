@@ -1,0 +1,21 @@
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.input_field{
+    padding: 1rem 1rem;
+    width: 85%;
+    //border-radius: 100px;
+    border: none;
+    background-color: rgb(235, 228, 228);
+    border-bottom: 1px solid transparent;
+    font-family: "Lato";
+    &:focus{
+        outline: none;
+        border-bottom: 1px solid greenyellow;
+    }
+    &::valid{
+        border-bottom: 1px solid red;
+    }
+}

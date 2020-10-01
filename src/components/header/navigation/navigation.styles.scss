@@ -6,6 +6,9 @@
         justify-content: space-between;
         align-items: center;
         font-size: 1.4rem;
+        position: fixed;
+        z-index: 100;
+        position: relative;
 }
 .logo-container{
     margin-left: 3rem; 
@@ -24,15 +27,17 @@
     margin-inline-end: -3rem;
     margin-right: auto;
     margin-left: auto;
+    
 }
 .search__input{
     padding: .8rem 1.7rem;
-    border-radius: 1rem;
-    width: 80%;
+    border-radius: 200px;;
+    width: 90%;
     margin-right: -5rem;
     transition: all .5s;
     border: none;
     background-color:#f4f2f2;
+    color: #c69963;
   
     &:focus,
     &:active{
@@ -53,15 +58,14 @@
     transition: all .5s;
     background-color:#c69963;
     padding: .8rem 1.2rem;
-    border-radius: 10px;
+    border-radius: 100px;
     color: #fff;
+    box-shadow: 0 .5rem .6rem rgba(#c69963, 0.3);
    
     &:focus{
         outline: none;
     }
-    &:active{
-        transform: translateY(3px);
-    }
+  
 
 }
 .first{
@@ -74,28 +78,68 @@
 }
 .nav-lists{
     display: flex;
-    justify-content: space-between;
-    margin-right: 2rem;
+    justify-content: space-around;
+    margin-right: 3rem;
     align-content: center;
+    font-size: 14px;
+    
 }
 .nav-items{
     display: flex;
     justify-content: center;  
-    margin-left: 2rem;
+    margin-left: 1.7rem;
     
 }
 .profile{
-    margin-left: 2rem;
+    margin-left: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .shopping-cart,
 .help{
-    margin-left: 2rem; 
+    margin-left: 1.7rem; 
+    display: flex;
 }
 .icon{
     height: 2rem;
     width: 2rem;
     fill: rgba(#101d2c,.85);
+}
+.item-count{
+    height: 1.4rem;
+    width: 1.4rem; 
+    background-color: red;
+    border-radius: 200px;
+    position: absolute;
+    top: -.6rem;
+    left: 1.7rem;
+    color: #fff;
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    
+}
+.shopping-cart{
+    position: relative;
+    display: flex;
+    align-items: center;
+   
+
+
+}
+.text{
+    font-size: 1rem;
+    margin-left: 5px;
+}
+.help{
+    display: flex;
+    align-items: center;
+   
+
 }
 

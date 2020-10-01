@@ -1,6 +1,6 @@
 import React from 'react';
 import "./navigation.styles.scss";
-import {Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import {ReactComponent as Shoppingcart } from "../../../assets/shopping-cart.svg";
 import { ReactComponent as UserSvg } from "../../../assets/user-circle.svg";
 import { ReactComponent as QuestionSvg } from "../../../assets/question-circle.svg";
@@ -10,7 +10,7 @@ import { ReactComponent as QuestionSvg } from "../../../assets/question-circle.s
 const NavigationBar=()=>(
     <div className="navigation-bar">
         <div className="logo-container">
-            <Link className="logo-link"> <span className="first">E</span><span className="second">sales</span></Link>
+            <Link  to="/" className="logo-link"> <span className="first">E</span><span className="second">sales</span></Link>
         </div>
         
             <form action="#" className="search">
@@ -24,18 +24,22 @@ const NavigationBar=()=>(
             <div className="nav-items">
                 <div className="help">
                     <QuestionSvg className="icon" />
+                    <span className="text">Help</span> 
                 </div>
                 <div className="shopping-cart">
                     <Shoppingcart  className="icon"/>
+                    <div className="item-count">2</div>
+                    <span className="text">Items</span> 
                 </div>
 
             </div>
             <div className="profile">
                 <UserSvg className="icon" />
+                <span className="text">Account</span> 
             </div>
-            <div className="profile">
-                login
-            </div>
+             <div className="profile">
+                {/*  <Link to="/signUp">Signup</Link> */}
+            </div> 
         </div>
     </div>
 )
