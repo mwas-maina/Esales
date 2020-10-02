@@ -4,13 +4,13 @@ import {Link} from "react-router-dom";
 import {ReactComponent as Shoppingcart } from "../../../assets/shopping-cart.svg";
 import { ReactComponent as UserSvg } from "../../../assets/user-circle.svg";
 import { ReactComponent as QuestionSvg } from "../../../assets/question-circle.svg";
-
+import {ReactComponent as EsalesLogo} from "../../../assets/esaleslogo.svg";
 
 
 const NavigationBar=()=>(
     <div className="navigation-bar">
         <div className="logo-container">
-            <Link  to="/" className="logo-link"> <span className="first">E</span><span className="second">sales</span></Link>
+            <Link  to="/" className="logo-link"><EsalesLogo className="logo" />esales</Link>
         </div>
         
             <form action="#" className="search">
