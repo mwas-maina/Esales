@@ -94,7 +94,7 @@
     margin-left: 1.7rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 
 }
 
@@ -111,11 +111,11 @@
 .item-count{
     height: 1.4rem;
     width: 1.4rem; 
-    background-color: red;
+    background-color: #e15f41;
     border-radius: 200px;
     position: absolute;
-    top: -.6rem;
-    left: 1.7rem;
+    top: -.9rem;
+    left: 1.65rem;
     color: #fff;
     font-size: .7rem;
     display: flex;
@@ -132,10 +132,11 @@
 
 
 }
-.text{
+ .text{
     font-size: 1rem;
     margin-left: 5px;
-}
+    display: flex;
+} 
 .help{
     display: flex;
     align-items: center;

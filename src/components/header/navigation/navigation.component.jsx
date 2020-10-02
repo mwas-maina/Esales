@@ -28,10 +28,10 @@ const NavigationBar=()=>(
                 </div>
                 <div className="shopping-cart">
                     <Shoppingcart  className="icon"/>
-                    <div className="item-count">2</div>
                     <span className="text">Items</span> 
+                    <div className="item-count">2</div>
+                   
                 </div>
-
             </div>
             <div className="profile">
                 <UserSvg className="icon" />

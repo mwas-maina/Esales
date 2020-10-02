@@ -13,7 +13,7 @@
     flex-direction: column;
     background-color: #fff;
     align-items:center;
-    padding-top: 4.5rem; 
+    padding-top: 2.5rem; 
     border-radius: 8px; 
 }
 
@@ -26,28 +26,17 @@
         margin-bottom: 1rem;
     }
 }
-.text{
+.text-highlight{
     margin-bottom: 2rem;
     color: rgba(#101d2c,.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
-.sign-btn{
-    margin-bottom: 1.5rem;
-    padding: .9rem 1.7rem;
-    background-color:rgba(#101d2c,.85);
-    border: none;
-    color: rgba(#fff,.8);
-    border-radius: 200px;
-    width: 85%;
-    font-size: 1.2rem;
-   
-    
-    &:focus{
-        outline: none;
-        border: none;
-    }
-    &:active{
-        border: none;
-        outline: none;
-    }
 
+.user-svg{
+    height: 4rem;
+    width: 4rem;
+    fill: rgba(#101d2c,.85);;
 }

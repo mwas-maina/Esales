@@ -1,0 +1,34 @@
+.sign-in{
+    background-image:linear-gradient(to top,rgba(#c69963,.4),rgba(0,0,0,.4)) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    height: 90vh;
+    width: 100vw; 
+}
+.signin{
+    display: flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+    background-color: #fff;
+    align-items:center;
+    padding-top: 2.5rem; 
+    border-radius: 8px;
+}
+.email,
+.password{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.no-account{
+    margin: .1rem 0;
+    margin-bottom: 1rem;
+   
+}
+.signup-link{
+    font-size: 1.1rem;
+    color:rgba(#101d2c,.85);
+    border-bottom:  1.5px solid rgba(#c69963,.4);
+  
+}

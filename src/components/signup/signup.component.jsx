@@ -3,6 +3,9 @@ import "./signup.styles.scss";
 import FormInput from '../forminput/form-input.component';
 import swal from 'sweetalert';
 
+import AuthButton from '../custom-buttons/submit-buttons/customSubmitButton.component';
+import UserAlt from '../SVGS/User.svg';
+
 export class SignUp extends Component {
     constructor(props) {
       super(props)
@@ -24,7 +27,8 @@ export class SignUp extends Component {
         return (
             <div className="signup-form">
                 <form className="sign-up" onSubmit={this.onSubmitForm}>
-                    <div className="text">
+                    <div className="text-highlight">
+                       <UserAlt />
                         <h2>Sign-up</h2>
                     </div>
                     <div className="name">
@@ -39,7 +43,8 @@ export class SignUp extends Component {
                     <div className="password">
                     <FormInput type="text" placeholder="Confirm password"  required />
                     </div>
-                    <input type="submit" value="SignUp"  className="sign-btn"/>
+                    {/* <input type="submit" value="SignUp"  className="sign-btn"/> */}
+                    <AuthButton>signup</AuthButton>
                 </form>
                             
             </div>
