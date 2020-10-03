@@ -17,11 +17,11 @@
     border-radius: 8px; 
 }
 
-.name,
-.email,
-.password{
-   
-    width: 100%;
+.inputs
+{
+    width: 85%;
+  /*   display: flex;
+    justify-content: center; */
     &:not(:last-child){
         margin-bottom: 1rem;
     }
@@ -39,4 +39,20 @@
     height: 4rem;
     width: 4rem;
     fill: rgba(#101d2c,.85);;
+}
+.input_field{
+    padding: 1rem 1rem;
+    width: 100%;
+    //border-radius: 100px;
+    border: none;
+    background-color: rgb(235, 228, 228);
+    border-bottom: 1px solid transparent;
+    font-family: "Lato";
+    &:focus{
+        outline: none;
+        border-bottom: 1px solid greenyellow;
+    }
+    &::valid{
+        border-bottom: 1px solid red;
+    }
 }

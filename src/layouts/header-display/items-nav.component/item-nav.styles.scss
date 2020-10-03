@@ -1,0 +1,21 @@
+.sidenav-items-container{
+    background-color: #fff;
+    flex: 0 0 22%;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 5px;
+   
+}
+.nav-items-text{
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+    &--1{
+        font-size: 1.6rem;
+        color:rgba(#101d2c,.85); 
+        font-weight: 100;
+    }
+}
+
+
